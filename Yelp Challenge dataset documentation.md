@@ -1,6 +1,28 @@
        
 
-*   [Table of Contents](#contents)
+### <a id="documentation-body"></a>
+
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image1.png?raw=true)
+
+MongoDB Physical Model
+----------------------
+
+#### Schema for:
+
+Model name: Yelp Challenge dataset
+
+Author: Pascal
+
+Version: 1.2
+
+File name: Yelp Challenge dataset.json
+
+### <a id="file-path"></a>File path: C:\\Users\\Pascal\\Documents\\Hackolade\\Models\\MongoDB\\Yelp Challenge dataset.json### <a id="printed-on"></a>Printed On: Fri Oct 09 2020 18:46:27 GMT+0200 (Central European Summer Time)
+
+Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoSQL and multimodel databases
+
+### <a id="contents"></a>
+
 *   [1\. Model](#model)
 *   [2\. Databases](#containers)
     *   [2.1 yelp](#3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6)
@@ -27,60 +49,7 @@
     *   [4.4 fk\_tipsBusinesses](#8a3660f0-2b26-11e6-b7e5-591297143e36)
     *   [4.5 fk\_tipsUsers](#aa956d50-2b26-11e6-b7e5-591297143e36)
 
-### <a id="documentation-body"></a>
-
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image1.png?raw=true)
-
-MongoDB Physical Model
-----------------------
-
-#### Schema for:
-
-Model name: Yelp Challenge dataset
-
-Author: Pascal
-
-Version: 1.2
-
-File name: Yelp Challenge dataset.json
-
-### <a id="file-path"></a>File path: C:\\Users\\Pascal\\Documents\\Hackolade\\Models\\MongoDB\\Yelp Challenge dataset.json### <a id="printed-on"></a>Printed On: Thu Oct 08 2020 19:44:36 GMT+0200 (Central European Summer Time)
-
-Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoSQL and multimodel databases
-
-### <a id="contents"></a>
-
-##### 1\. Model
-
-##### 2\. Databases
-
-*   [2.1 yelp](#3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6)
-    
-    [2.1.2. Collections](#3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6)
-    
-    [2.1.2.1 businesses](#0dd7ead0-2b24-11e6-b7e5-591297143e36)
-    
-    [2.1.2.2 checkins](#a080d1d0-91f6-11e9-a924-ddc9cd9b071f)
-    
-    [2.1.2.3 reviews](#0da2aa00-2b24-11e6-b7e5-591297143e36)
-    
-    [2.1.2.4 tips](#0de02830-2b24-11e6-b7e5-591297143e36)
-    
-    [2.1.2.5 users](#0df0f110-2b24-11e6-b7e5-591297143e36)
-    
-
-##### 3\. Views
-
-*   [3.1 rov\_bussiness](#5c771580-5193-11e7-b9f2-49270a53df2c)
-*   [3.2 rov\_rev\_users](#090874c0-5206-11e7-8e65-9b1d6a151b1d)
-
-##### 4\. Relationships
-
-*   [4.1 fk businesses.business\_id to checkins.business\_id](#003231f0-91f7-11e9-a924-ddc9cd9b071f)
-*   [4.2 fk\_reviewsBusinesses](#fb857d40-2b26-11e6-b7e5-591297143e36)
-*   [4.3 fk\_reviewsUsers](#e2514f70-2b26-11e6-b7e5-591297143e36)
-*   [4.4 fk\_tipsBusinesses](#8a3660f0-2b26-11e6-b7e5-591297143e36)
-*   [4.5 fk\_tipsUsers](#aa956d50-2b26-11e6-b7e5-591297143e36)
+### <a id="model"></a>
 
 ##### 1\. Model
 
@@ -88,7 +57,7 @@ Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoS
 
 ##### 1.1.1 **Yelp Challenge dataset** Entity Relationship Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image2.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image2.png?raw=true)
 
 ##### 1.1.2 **Yelp Challenge dataset** Properties
 
@@ -100,7 +69,7 @@ Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoS
 
 ##### 1.1.3.1.1 **full\_address** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image3.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image3.png?raw=true)
 
 ##### 1.1.3.1.2 **full\_address** Hierarchy
 
@@ -166,7 +135,7 @@ Child field(s):
 
 ##### 2.1.2.1.1 **businesses** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image4.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image4.png?raw=true)
 
 ##### 2.1.2.1.2 **businesses** Properties
 
@@ -210,7 +179,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.6.1 **attributes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image5.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image5.png?raw=true)
 
 ##### 2.1.2.1.3.6.2 **attributes** Hierarchy
 
@@ -246,7 +215,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.10.1 **Ambience** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image6.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image6.png?raw=true)
 
 ##### 2.1.2.1.3.10.2 **Ambience** Hierarchy
 
@@ -366,7 +335,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.28.1 **Good For** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image7.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image7.png?raw=true)
 
 ##### 2.1.2.1.3.28.2 **Good For** Hierarchy
 
@@ -450,7 +419,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.40.1 **Music** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image8.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image8.png?raw=true)
 
 ##### 2.1.2.1.3.40.2 **Music** Hierarchy
 
@@ -528,7 +497,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.51.1 **Parking** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image9.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image9.png?raw=true)
 
 ##### 2.1.2.1.3.51.2 **Parking** Hierarchy
 
@@ -618,7 +587,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.64.1 **categories** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image10.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image10.png?raw=true)
 
 ##### 2.1.2.1.3.64.2 **categories** Hierarchy
 
@@ -642,7 +611,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.66.1 **hours** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image11.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image11.png?raw=true)
 
 ##### 2.1.2.1.3.66.2 **hours** Hierarchy
 
@@ -660,7 +629,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.67.1 **Friday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image12.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image12.png?raw=true)
 
 ##### 2.1.2.1.3.67.2 **Friday** Hierarchy
 
@@ -690,7 +659,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.70.1 **Monday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image13.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image13.png?raw=true)
 
 ##### 2.1.2.1.3.70.2 **Monday** Hierarchy
 
@@ -720,7 +689,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.73.1 **Saturday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image14.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image14.png?raw=true)
 
 ##### 2.1.2.1.3.73.2 **Saturday** Hierarchy
 
@@ -750,7 +719,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.76.1 **Sunday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image15.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image15.png?raw=true)
 
 ##### 2.1.2.1.3.76.2 **Sunday** Hierarchy
 
@@ -780,7 +749,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.79.1 **Thursday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image16.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image16.png?raw=true)
 
 ##### 2.1.2.1.3.79.2 **Thursday** Hierarchy
 
@@ -810,7 +779,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.82.1 **Tuesday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image17.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image17.png?raw=true)
 
 ##### 2.1.2.1.3.82.2 **Tuesday** Hierarchy
 
@@ -840,7 +809,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.85.1 **Wednesday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image18.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image18.png?raw=true)
 
 ##### 2.1.2.1.3.85.2 **Wednesday** Hierarchy
 
@@ -882,7 +851,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.90.1 **neighborhoods** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image19.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image19.png?raw=true)
 
 ##### 2.1.2.1.3.90.2 **neighborhoods** Hierarchy
 
@@ -1290,7 +1259,7 @@ db.createCollection( "businesses",{
 
 ##### 2.1.2.2.1 **checkins** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image20.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image20.png?raw=true)
 
 ##### 2.1.2.2.2 **checkins** Properties
 
@@ -1310,7 +1279,7 @@ db.createCollection( "businesses",{
 
 ##### 2.1.2.2.3.2.1 **checkin\_info** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image21.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image21.png?raw=true)
 
 ##### 2.1.2.2.3.2.2 **checkin\_info** Hierarchy
 
@@ -1412,7 +1381,7 @@ db.checkins.createIndex(
 
 ##### 2.1.2.3.1 **reviews** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image22.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image22.png?raw=true)
 
 ##### 2.1.2.3.2 **reviews** Properties
 
@@ -1468,7 +1437,7 @@ db.checkins.createIndex(
 
 ##### 2.1.2.3.3.8.1 **votes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image23.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image23.png?raw=true)
 
 ##### 2.1.2.3.3.8.2 **votes** Hierarchy
 
@@ -1568,7 +1537,7 @@ db.createCollection( "reviews",{
 
 ##### 2.1.2.4.1 **tips** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image24.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image24.png?raw=true)
 
 ##### 2.1.2.4.2 **tips** Properties
 
@@ -1671,7 +1640,7 @@ db.createCollection( "tips",{
 
 ##### 2.1.2.5.1 **users** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image25.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image25.png?raw=true)
 
 ##### 2.1.2.5.2 **users** Properties
 
@@ -1709,7 +1678,7 @@ db.createCollection( "tips",{
 
 ##### 2.1.2.5.3.5.1 **compliments** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image26.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image26.png?raw=true)
 
 ##### 2.1.2.5.3.5.2 **compliments** Hierarchy
 
@@ -1787,7 +1756,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.16.1 **elite** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image27.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image27.png?raw=true)
 
 ##### 2.1.2.5.3.16.2 **elite** Hierarchy
 
@@ -1817,7 +1786,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.19.1 **friends** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image28.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image28.png?raw=true)
 
 ##### 2.1.2.5.3.19.2 **friends** Hierarchy
 
@@ -1847,7 +1816,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.22.1 **votes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image29.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image29.png?raw=true)
 
 ##### 2.1.2.5.3.22.2 **votes** Hierarchy
 
@@ -2056,7 +2025,7 @@ true,
 
 ##### 3.1.1 **rov\_bussiness** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image30.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image30.png?raw=true)
 
 ##### 3.1.2 **rov\_bussiness** Properties
 
@@ -2094,7 +2063,7 @@ true,
 
 ##### 3.2.1 **rov\_rev\_users** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image31.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image31.png?raw=true)
 
 ##### 3.2.2 **rov\_rev\_users** Properties
 
@@ -2132,7 +2101,7 @@ true,
 
 ##### 3.2.3.5.1 **business** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image32.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image32.png?raw=true)
 
 ##### 3.2.3.5.2 **business** Hierarchy
 
@@ -2150,7 +2119,7 @@ Child field(s):
 
 ##### 3.2.3.6.1 **\[0\]** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image33.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image33.png?raw=true)
 
 ##### 3.2.3.6.2 **\[0\]** Hierarchy
 
@@ -2234,7 +2203,7 @@ Child field(s):
 
 ##### 3.2.3.18.1 **user** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image34.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image34.png?raw=true)
 
 ##### 3.2.3.18.2 **user** Hierarchy
 
@@ -2252,7 +2221,7 @@ Child field(s):
 
 ##### 3.2.3.19.1 **\[0\]** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image35.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image35.png?raw=true)
 
 ##### 3.2.3.19.2 **\[0\]** Hierarchy
 
@@ -2306,7 +2275,7 @@ Child field(s):
 
 <table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image36.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images/image37.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image36.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image37.png?raw=true)
 
 <table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#a080d1d0-91f6-11e9-a924-ddc9cd9b071f>checkins(1)</a></td><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business\_id</a></td></tr></tbody></table>
 
@@ -2320,7 +2289,7 @@ Child field(s):
 
 <table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image38.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images/image39.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image38.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image39.png?raw=true)
 
 <table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
 
@@ -2334,7 +2303,7 @@ Child field(s):
 
 <table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image40.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images/image41.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image40.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image41.png?raw=true)
 
 <table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
 
@@ -2348,7 +2317,7 @@ Child field(s):
 
 <table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image42.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images/image43.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image42.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image43.png?raw=true)
 
 <table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
 
@@ -2362,7 +2331,7 @@ Child field(s):
 
 <table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images/image44.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images/image45.png?raw=true)
+![Hackolade image](/YelpChallengedatasetdocumentation_images2/image44.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image45.png?raw=true)
 
 <table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
 
