@@ -2,7 +2,7 @@
 
 ### <a id="documentation-body"></a>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image1.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image1.png?raw=true)
 
 MongoDB Physical Model
 ----------------------
@@ -17,14 +17,16 @@ Version: 1.2
 
 File name: Yelp Challenge dataset.json
 
-### <a id="file-path"></a>File path: C:\\Users\\Pascal\\Documents\\Hackolade\\Models\\MongoDB\\Yelp Challenge dataset.json### <a id="printed-on"></a>Printed On: Fri Oct 09 2020 18:46:27 GMT+0200 (Central European Summer Time)
+File path: C:\\Users\\Pascal\\Documents\\Hackolade\\Models\\MongoDB\\Yelp Challenge dataset.json
+
+Printed On: Fri Oct 16 2020 05:59:30 GMT+0200 (Central European Summer Time)
 
 Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoSQL and multimodel databases
 
 ### <a id="contents"></a>
 
-*   [1\. Model](#model)
-*   [2\. Databases](#containers)
+*   [1. Model](#model)
+*   [2. Databases](#containers)
     *   [2.1 yelp](#3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6)
         
         [2.1.2. Collections](#3dee5aa0-f5dc-11e6-aaa0-997d0683e5e6)
@@ -39,15 +41,15 @@ Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoS
         
         [2.1.2.5 users](#0df0f110-2b24-11e6-b7e5-591297143e36)
         
-*   [3\. Views](#views)
-    *   [3.1 rov\_bussiness](#5c771580-5193-11e7-b9f2-49270a53df2c)
-    *   [3.2 rov\_rev\_users](#090874c0-5206-11e7-8e65-9b1d6a151b1d)
-*   [4\. Relationships](#relationships)
-    *   [4.1 fk businesses.business\_id to checkins.business\_id](#003231f0-91f7-11e9-a924-ddc9cd9b071f)
-    *   [4.2 fk\_reviewsBusinesses](#fb857d40-2b26-11e6-b7e5-591297143e36)
-    *   [4.3 fk\_reviewsUsers](#e2514f70-2b26-11e6-b7e5-591297143e36)
-    *   [4.4 fk\_tipsBusinesses](#8a3660f0-2b26-11e6-b7e5-591297143e36)
-    *   [4.5 fk\_tipsUsers](#aa956d50-2b26-11e6-b7e5-591297143e36)
+*   [3. Views](#views)
+    *   [3.1 rov_bussiness](#5c771580-5193-11e7-b9f2-49270a53df2c)
+    *   [3.2 rov_rev_users](#090874c0-5206-11e7-8e65-9b1d6a151b1d)
+*   [4. Relationships](#relationships)
+    *   [4.1 fk businesses.business_id to checkins.business_id](#003231f0-91f7-11e9-a924-ddc9cd9b071f)
+    *   [4.2 fk_reviewsBusinesses](#fb857d40-2b26-11e6-b7e5-591297143e36)
+    *   [4.3 fk_reviewsUsers](#e2514f70-2b26-11e6-b7e5-591297143e36)
+    *   [4.4 fk_tipsBusinesses](#8a3660f0-2b26-11e6-b7e5-591297143e36)
+    *   [4.5 fk_tipsUsers](#aa956d50-2b26-11e6-b7e5-591297143e36)
 
 ### <a id="model"></a>
 
@@ -57,7 +59,7 @@ Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoS
 
 ##### 1.1.1 **Yelp Challenge dataset** Entity Relationship Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image2.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image2.png?raw=true)
 
 ##### 1.1.2 **Yelp Challenge dataset** Properties
 
@@ -69,7 +71,7 @@ Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoS
 
 ##### 1.1.3.1.1 **full\_address** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image3.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image3.png?raw=true)
 
 ##### 1.1.3.1.2 **full\_address** Hierarchy
 
@@ -135,7 +137,7 @@ Child field(s):
 
 ##### 2.1.2.1.1 **businesses** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image4.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image4.png?raw=true)
 
 ##### 2.1.2.1.2 **businesses** Properties
 
@@ -143,7 +145,7 @@ Child field(s):
 
 ##### 2.1.2.1.3 **businesses** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#0dd81219-2b24-11e6-b7e5-591297143e36>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#42970fb0-de10-11e9-b618-a12fa8f5b98e>full\_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ff-2b24-11e6-b7e5-591297143e36>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121f-2b24-11e6-b7e5-591297143e36>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead2-2b24-11e6-b7e5-591297143e36>attributes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead3-2b24-11e6-b7e5-591297143e36>acceptsCreditCards</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead4-2b24-11e6-b7e5-591297143e36>acceptsInsurance</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead5-2b24-11e6-b7e5-591297143e36>alcohol</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead6-2b24-11e6-b7e5-591297143e36>ambience</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead7-2b24-11e6-b7e5-591297143e36>casual</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead8-2b24-11e6-b7e5-591297143e36>classy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead9-2b24-11e6-b7e5-591297143e36>divey</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eada-2b24-11e6-b7e5-591297143e36>hipster</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadb-2b24-11e6-b7e5-591297143e36>intimate</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadc-2b24-11e6-b7e5-591297143e36>romantic</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadd-2b24-11e6-b7e5-591297143e36>touristy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eade-2b24-11e6-b7e5-591297143e36>trendy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadf-2b24-11e6-b7e5-591297143e36>upscale</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae0-2b24-11e6-b7e5-591297143e36>attire</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae1-2b24-11e6-b7e5-591297143e36>byAppointmentOnly</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae2-2b24-11e6-b7e5-591297143e36>byob/corkage</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae3-2b24-11e6-b7e5-591297143e36>caters</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae4-2b24-11e6-b7e5-591297143e36>coatCheck</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae5-2b24-11e6-b7e5-591297143e36>delivery</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae6-2b24-11e6-b7e5-591297143e36>dogsAllowed</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae7-2b24-11e6-b7e5-591297143e36>drive-thru</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae8-2b24-11e6-b7e5-591297143e36>goodFor</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae9-2b24-11e6-b7e5-591297143e36>breakfast</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaea-2b24-11e6-b7e5-591297143e36>brunch</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaeb-2b24-11e6-b7e5-591297143e36>dessert</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaec-2b24-11e6-b7e5-591297143e36>dinner</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaed-2b24-11e6-b7e5-591297143e36>latenight</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaee-2b24-11e6-b7e5-591297143e36>lunch</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaef-2b24-11e6-b7e5-591297143e36>goodForDancing</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e0-2b24-11e6-b7e5-591297143e36>goodForGroups</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e1-2b24-11e6-b7e5-591297143e36>goodForKids</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e2-2b24-11e6-b7e5-591297143e36>happyHour</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e3-2b24-11e6-b7e5-591297143e36>hasTv</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e4-2b24-11e6-b7e5-591297143e36>music</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e5-2b24-11e6-b7e5-591297143e36>background\_music</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e6-2b24-11e6-b7e5-591297143e36>dj</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e7-2b24-11e6-b7e5-591297143e36>jukebox</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e8-2b24-11e6-b7e5-591297143e36>karaoke</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e9-2b24-11e6-b7e5-591297143e36>live</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ea-2b24-11e6-b7e5-591297143e36>video</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811eb-2b24-11e6-b7e5-591297143e36>noiseLevel</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ec-2b24-11e6-b7e5-591297143e36>open24Hours</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ed-2b24-11e6-b7e5-591297143e36>orderAtCounter</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ee-2b24-11e6-b7e5-591297143e36>outdoorSeating</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ef-2b24-11e6-b7e5-591297143e36>parking</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f0-2b24-11e6-b7e5-591297143e36>garage</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f1-2b24-11e6-b7e5-591297143e36>lot</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f2-2b24-11e6-b7e5-591297143e36>street</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f3-2b24-11e6-b7e5-591297143e36>valet</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f4-2b24-11e6-b7e5-591297143e36>validated</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f5-2b24-11e6-b7e5-591297143e36>priceRange</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f6-2b24-11e6-b7e5-591297143e36>smoking</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f7-2b24-11e6-b7e5-591297143e36>take-out</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f8-2b24-11e6-b7e5-591297143e36>takesReservations</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f9-2b24-11e6-b7e5-591297143e36>waiterService</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fa-2b24-11e6-b7e5-591297143e36>wheelchairAccessible</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fb-2b24-11e6-b7e5-591297143e36>wi-fi</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fd-2b24-11e6-b7e5-591297143e36>categories</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fe-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81201-2b24-11e6-b7e5-591297143e36>hours</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81202-2b24-11e6-b7e5-591297143e36>friday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81203-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81204-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81205-2b24-11e6-b7e5-591297143e36>monday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81206-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81207-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81208-2b24-11e6-b7e5-591297143e36>saturday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81209-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120a-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120b-2b24-11e6-b7e5-591297143e36>sunday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120c-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120d-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120e-2b24-11e6-b7e5-591297143e36>thursday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120f-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81210-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81211-2b24-11e6-b7e5-591297143e36>tuesday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81212-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81213-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81214-2b24-11e6-b7e5-591297143e36>wednesday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81215-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81216-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81217-2b24-11e6-b7e5-591297143e36>latitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81218-2b24-11e6-b7e5-591297143e36>longitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121a-2b24-11e6-b7e5-591297143e36>neighborhoods</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121b-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121c-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121d-2b24-11e6-b7e5-591297143e36>review\_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121e-2b24-11e6-b7e5-591297143e36>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81220-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#0dd81219-2b24-11e6-b7e5-591297143e36>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#42970fb0-de10-11e9-b618-a12fa8f5b98e>full_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ff-2b24-11e6-b7e5-591297143e36>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121f-2b24-11e6-b7e5-591297143e36>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead2-2b24-11e6-b7e5-591297143e36>attributes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead3-2b24-11e6-b7e5-591297143e36>acceptsCreditCards</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead4-2b24-11e6-b7e5-591297143e36>acceptsInsurance</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead5-2b24-11e6-b7e5-591297143e36>alcohol</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead6-2b24-11e6-b7e5-591297143e36>ambience</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead7-2b24-11e6-b7e5-591297143e36>casual</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead8-2b24-11e6-b7e5-591297143e36>classy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7ead9-2b24-11e6-b7e5-591297143e36>divey</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eada-2b24-11e6-b7e5-591297143e36>hipster</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadb-2b24-11e6-b7e5-591297143e36>intimate</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadc-2b24-11e6-b7e5-591297143e36>romantic</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadd-2b24-11e6-b7e5-591297143e36>touristy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eade-2b24-11e6-b7e5-591297143e36>trendy</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eadf-2b24-11e6-b7e5-591297143e36>upscale</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae0-2b24-11e6-b7e5-591297143e36>attire</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae1-2b24-11e6-b7e5-591297143e36>byAppointmentOnly</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae2-2b24-11e6-b7e5-591297143e36>byob/corkage</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae3-2b24-11e6-b7e5-591297143e36>caters</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae4-2b24-11e6-b7e5-591297143e36>coatCheck</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae5-2b24-11e6-b7e5-591297143e36>delivery</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae6-2b24-11e6-b7e5-591297143e36>dogsAllowed</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae7-2b24-11e6-b7e5-591297143e36>drive-thru</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae8-2b24-11e6-b7e5-591297143e36>goodFor</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eae9-2b24-11e6-b7e5-591297143e36>breakfast</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaea-2b24-11e6-b7e5-591297143e36>brunch</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaeb-2b24-11e6-b7e5-591297143e36>dessert</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaec-2b24-11e6-b7e5-591297143e36>dinner</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaed-2b24-11e6-b7e5-591297143e36>latenight</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaee-2b24-11e6-b7e5-591297143e36>lunch</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd7eaef-2b24-11e6-b7e5-591297143e36>goodForDancing</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e0-2b24-11e6-b7e5-591297143e36>goodForGroups</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e1-2b24-11e6-b7e5-591297143e36>goodForKids</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e2-2b24-11e6-b7e5-591297143e36>happyHour</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e3-2b24-11e6-b7e5-591297143e36>hasTv</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e4-2b24-11e6-b7e5-591297143e36>music</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e5-2b24-11e6-b7e5-591297143e36>background_music</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e6-2b24-11e6-b7e5-591297143e36>dj</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e7-2b24-11e6-b7e5-591297143e36>jukebox</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e8-2b24-11e6-b7e5-591297143e36>karaoke</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e9-2b24-11e6-b7e5-591297143e36>live</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ea-2b24-11e6-b7e5-591297143e36>video</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811eb-2b24-11e6-b7e5-591297143e36>noiseLevel</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ec-2b24-11e6-b7e5-591297143e36>open24Hours</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ed-2b24-11e6-b7e5-591297143e36>orderAtCounter</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ee-2b24-11e6-b7e5-591297143e36>outdoorSeating</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ef-2b24-11e6-b7e5-591297143e36>parking</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f0-2b24-11e6-b7e5-591297143e36>garage</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f1-2b24-11e6-b7e5-591297143e36>lot</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f2-2b24-11e6-b7e5-591297143e36>street</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f3-2b24-11e6-b7e5-591297143e36>valet</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f4-2b24-11e6-b7e5-591297143e36>validated</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f5-2b24-11e6-b7e5-591297143e36>priceRange</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f6-2b24-11e6-b7e5-591297143e36>smoking</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f7-2b24-11e6-b7e5-591297143e36>take-out</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f8-2b24-11e6-b7e5-591297143e36>takesReservations</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811f9-2b24-11e6-b7e5-591297143e36>waiterService</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fa-2b24-11e6-b7e5-591297143e36>wheelchairAccessible</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fb-2b24-11e6-b7e5-591297143e36>wi-fi</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fd-2b24-11e6-b7e5-591297143e36>categories</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811fe-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81201-2b24-11e6-b7e5-591297143e36>hours</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81202-2b24-11e6-b7e5-591297143e36>friday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81203-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81204-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81205-2b24-11e6-b7e5-591297143e36>monday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81206-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81207-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81208-2b24-11e6-b7e5-591297143e36>saturday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81209-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120a-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120b-2b24-11e6-b7e5-591297143e36>sunday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120c-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120d-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120e-2b24-11e6-b7e5-591297143e36>thursday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8120f-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81210-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81211-2b24-11e6-b7e5-591297143e36>tuesday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81212-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81213-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81214-2b24-11e6-b7e5-591297143e36>wednesday</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81215-2b24-11e6-b7e5-591297143e36>close</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81216-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81217-2b24-11e6-b7e5-591297143e36>latitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81218-2b24-11e6-b7e5-591297143e36>longitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121a-2b24-11e6-b7e5-591297143e36>neighborhoods</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121b-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121c-2b24-11e6-b7e5-591297143e36>open</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121d-2b24-11e6-b7e5-591297143e36>review_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd8121e-2b24-11e6-b7e5-591297143e36>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd81220-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="0dd811fc-2b24-11e6-b7e5-591297143e36"></a>2.1.2.1.3.1 Field **business\_id**
 
@@ -179,7 +181,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.6.1 **attributes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image5.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image5.png?raw=true)
 
 ##### 2.1.2.1.3.6.2 **attributes** Hierarchy
 
@@ -215,7 +217,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.10.1 **Ambience** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image6.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image6.png?raw=true)
 
 ##### 2.1.2.1.3.10.2 **Ambience** Hierarchy
 
@@ -335,7 +337,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.28.1 **Good For** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image7.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image7.png?raw=true)
 
 ##### 2.1.2.1.3.28.2 **Good For** Hierarchy
 
@@ -419,7 +421,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.40.1 **Music** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image8.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image8.png?raw=true)
 
 ##### 2.1.2.1.3.40.2 **Music** Hierarchy
 
@@ -427,7 +429,7 @@ Parent field: **attributes**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811e5-2b24-11e6-b7e5-591297143e36>background\_music</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e6-2b24-11e6-b7e5-591297143e36>dj</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e7-2b24-11e6-b7e5-591297143e36>jukebox</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e8-2b24-11e6-b7e5-591297143e36>karaoke</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e9-2b24-11e6-b7e5-591297143e36>live</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ea-2b24-11e6-b7e5-591297143e36>video</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811e5-2b24-11e6-b7e5-591297143e36>background_music</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e6-2b24-11e6-b7e5-591297143e36>dj</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e7-2b24-11e6-b7e5-591297143e36>jukebox</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e8-2b24-11e6-b7e5-591297143e36>karaoke</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811e9-2b24-11e6-b7e5-591297143e36>live</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0dd811ea-2b24-11e6-b7e5-591297143e36>video</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.1.3.40.3 **Music** properties
 
@@ -497,7 +499,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.51.1 **Parking** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image9.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image9.png?raw=true)
 
 ##### 2.1.2.1.3.51.2 **Parking** Hierarchy
 
@@ -587,7 +589,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.64.1 **categories** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image10.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image10.png?raw=true)
 
 ##### 2.1.2.1.3.64.2 **categories** Hierarchy
 
@@ -595,7 +597,7 @@ Parent field: **businesses**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811fe-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd811fe-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.1.3.64.3 **categories** properties
 
@@ -611,7 +613,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.66.1 **hours** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image11.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image11.png?raw=true)
 
 ##### 2.1.2.1.3.66.2 **hours** Hierarchy
 
@@ -629,7 +631,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.67.1 **Friday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image12.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image12.png?raw=true)
 
 ##### 2.1.2.1.3.67.2 **Friday** Hierarchy
 
@@ -659,7 +661,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.70.1 **Monday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image13.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image13.png?raw=true)
 
 ##### 2.1.2.1.3.70.2 **Monday** Hierarchy
 
@@ -689,7 +691,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.73.1 **Saturday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image14.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image14.png?raw=true)
 
 ##### 2.1.2.1.3.73.2 **Saturday** Hierarchy
 
@@ -719,7 +721,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.76.1 **Sunday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image15.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image15.png?raw=true)
 
 ##### 2.1.2.1.3.76.2 **Sunday** Hierarchy
 
@@ -749,7 +751,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.79.1 **Thursday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image16.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image16.png?raw=true)
 
 ##### 2.1.2.1.3.79.2 **Thursday** Hierarchy
 
@@ -779,7 +781,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.82.1 **Tuesday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image17.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image17.png?raw=true)
 
 ##### 2.1.2.1.3.82.2 **Tuesday** Hierarchy
 
@@ -809,7 +811,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.85.1 **Wednesday** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image18.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image18.png?raw=true)
 
 ##### 2.1.2.1.3.85.2 **Wednesday** Hierarchy
 
@@ -851,7 +853,7 @@ Child field(s):
 
 ##### 2.1.2.1.3.90.1 **neighborhoods** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image19.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image19.png?raw=true)
 
 ##### 2.1.2.1.3.90.2 **neighborhoods** Hierarchy
 
@@ -859,7 +861,7 @@ Parent field: **businesses**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd8121b-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0dd8121b-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.1.3.90.3 **neighborhoods** properties
 
@@ -907,17 +909,17 @@ db.createCollection( "businesses",{
             "bsonType": "object",
             "title": "businesses",
             "properties": {
-                "\_id": {
+                "_id": {
                     "bsonType": "objectId"
                 },
-                "business\_id": {
+                "business_id": {
                     "bsonType": "objectId",
                     "description": "Unique key for businesses"
                 },
                 "name": {
                     "bsonType": "string"
                 },
-                "full\_address": {
+                "full_address": {
                     "bsonType": "object",
                     "properties": {
                         "houseNum": {
@@ -1056,7 +1058,7 @@ db.createCollection( "businesses",{
                         "music": {
                             "bsonType": "object",
                             "properties": {
-                                "background\_music": {
+                                "background_music": {
                                     "bsonType": "bool"
                                 },
                                 "dj": {
@@ -1234,7 +1236,7 @@ db.createCollection( "businesses",{
                 "open": {
                     "bsonType": "bool"
                 },
-                "review\_count": {
+                "review_count": {
                     "bsonType": "number"
                 },
                 "stars": {
@@ -1244,9 +1246,9 @@ db.createCollection( "businesses",{
                     "bsonType": "string"
                 }
             },
-            "required": \[
-                "business\_id"
-            \]
+            "required": [
+                "business_id"
+            ]
         }
     },
     "validationLevel": "off",
@@ -1259,7 +1261,7 @@ db.createCollection( "businesses",{
 
 ##### 2.1.2.2.1 **checkins** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image20.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image20.png?raw=true)
 
 ##### 2.1.2.2.2 **checkins** Properties
 
@@ -1267,7 +1269,7 @@ db.createCollection( "businesses",{
 
 ##### 2.1.2.2.3 **checkins** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#9c7dc020-91f6-11e9-a924-ddc9cd9b071f>\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7dc022-91f6-11e9-a924-ddc9cd9b071f>checkin\_info</a></td><td class="no-break-word">document</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e76-91f6-11e9-a924-ddc9cd9b071f>^\[a-zA-Z0-9\_.-\]{3}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e45-91f6-11e9-a924-ddc9cd9b071f>^\[a-zA-Z0-9\_.-\]{4}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e77-91f6-11e9-a924-ddc9cd9b071f>type</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business\_id</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#9c7dc020-91f6-11e9-a924-ddc9cd9b071f>_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7dc022-91f6-11e9-a924-ddc9cd9b071f>checkin_info</a></td><td class="no-break-word">document</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e76-91f6-11e9-a924-ddc9cd9b071f>^[a-zA-Z0-9_.-]{3}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e45-91f6-11e9-a924-ddc9cd9b071f>^[a-zA-Z0-9_.-]{4}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e77-91f6-11e9-a924-ddc9cd9b071f>type</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business_id</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="9c7dc020-91f6-11e9-a924-ddc9cd9b071f"></a>2.1.2.2.3.1 Field **\_id**
 
@@ -1279,7 +1281,7 @@ db.createCollection( "businesses",{
 
 ##### 2.1.2.2.3.2.1 **checkin\_info** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image21.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image21.png?raw=true)
 
 ##### 2.1.2.2.3.2.2 **checkin\_info** Hierarchy
 
@@ -1287,7 +1289,7 @@ Parent field: **checkins**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#9c7e0e76-91f6-11e9-a924-ddc9cd9b071f>^\[a-zA-Z0-9\_.-\]{3}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e45-91f6-11e9-a924-ddc9cd9b071f>^\[a-zA-Z0-9\_.-\]{4}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#9c7e0e76-91f6-11e9-a924-ddc9cd9b071f>^[a-zA-Z0-9_.-]{3}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9c7e0e45-91f6-11e9-a924-ddc9cd9b071f>^[a-zA-Z0-9_.-]{4}$</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.2.3.2.3 **checkin\_info** properties
 
@@ -1315,7 +1317,7 @@ Child field(s):
 
 ##### 2.1.2.2.3.6.1 **business\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>business_id</td></tr><tr><td>Technical name</td><td>business_id</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Required</td><td>true</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Foreign collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Foreign field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Sample</td><td>eFA9dqXT5EA_TrMgbo03QQ</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>business_id</td></tr><tr><td>Technical name</td><td>business_id</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Required</td><td>true</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Foreign collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Foreign field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr><tr><td>Sample</td><td>eFA9dqXT5EA_TrMgbo03QQ</td></tr></tbody></table>
 
 ##### 2.1.2.2.4 **checkins** Indexes
 
@@ -1333,17 +1335,17 @@ db.createCollection( "checkins",{
             "bsonType": "object",
             "title": "checkins",
             "properties": {
-                "\_id": {
+                "_id": {
                     "bsonType": "objectId"
                 },
-                "checkin\_info": {
+                "checkin_info": {
                     "bsonType": "object",
                     "additionalProperties": false,
                     "patternProperties": {
-                        "^\[a-zA-Z0-9\_.-\]{3}$": {
+                        "^[a-zA-Z0-9_.-]{3}$": {
                             "bsonType": "number"
                         },
-                        "^\[a-zA-Z0-9\_.-\]{4}$": {
+                        "^[a-zA-Z0-9_.-]{4}$": {
                             "bsonType": "number"
                         }
                     }
@@ -1351,16 +1353,16 @@ db.createCollection( "checkins",{
                 "type": {
                     "bsonType": "string"
                 },
-                "business\_id": {
+                "business_id": {
                     "bsonType": "string"
                 }
             },
-            "required": \[
-                "\_id",
-                "checkin\_info",
+            "required": [
+                "_id",
+                "checkin_info",
                 "type",
-                "business\_id"
-            \]
+                "business_id"
+            ]
         }
     },
     "validationLevel": "off",
@@ -1368,10 +1370,10 @@ db.createCollection( "checkins",{
 });
 db.checkins.createIndex(
 {
-    "\_id": 1
+    "_id": 1
 },
 {
-    "name": "\_id\_"
+    "name": "_id_"
 }
 );
 
@@ -1381,7 +1383,7 @@ db.checkins.createIndex(
 
 ##### 2.1.2.3.1 **reviews** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image22.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image22.png?raw=true)
 
 ##### 2.1.2.3.2 **reviews** Properties
 
@@ -1389,7 +1391,7 @@ db.checkins.createIndex(
 
 ##### 2.1.2.3.3 **reviews** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0da2aa04-2b24-11e6-b7e5-591297143e36>review\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa03-2b24-11e6-b7e5-591297143e36>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa05-2b24-11e6-b7e5-591297143e36>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa06-2b24-11e6-b7e5-591297143e36>text</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa07-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa09-2b24-11e6-b7e5-591297143e36>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0a-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0b-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0c-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0da2aa04-2b24-11e6-b7e5-591297143e36>review_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa03-2b24-11e6-b7e5-591297143e36>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa05-2b24-11e6-b7e5-591297143e36>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa06-2b24-11e6-b7e5-591297143e36>text</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa07-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa09-2b24-11e6-b7e5-591297143e36>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0a-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0b-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0da2aa0c-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="0da2aa04-2b24-11e6-b7e5-591297143e36"></a>2.1.2.3.3.1 Field **review\_id**
 
@@ -1437,7 +1439,7 @@ db.checkins.createIndex(
 
 ##### 2.1.2.3.3.8.1 **votes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image23.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image23.png?raw=true)
 
 ##### 2.1.2.3.3.8.2 **votes** Hierarchy
 
@@ -1481,13 +1483,13 @@ db.createCollection( "reviews",{
             "bsonType": "object",
             "title": "reviews",
             "properties": {
-                "\_id": {
+                "_id": {
                     "bsonType": "objectId"
                 },
-                "review\_id": {
+                "review_id": {
                     "bsonType": "objectId"
                 },
-                "business\_id": {
+                "business_id": {
                     "bsonType": "objectId"
                 },
                 "date": {
@@ -1502,7 +1504,7 @@ db.createCollection( "reviews",{
                 "type": {
                     "bsonType": "string"
                 },
-                "user\_id": {
+                "user_id": {
                     "bsonType": "objectId"
                 },
                 "votes": {
@@ -1520,11 +1522,11 @@ db.createCollection( "reviews",{
                     }
                 }
             },
-            "required": \[
-                "review\_id",
-                "business\_id",
-                "user\_id"
-            \]
+            "required": [
+                "review_id",
+                "business_id",
+                "user_id"
+            ]
         }
     },
     "validationLevel": "off",
@@ -1537,7 +1539,7 @@ db.createCollection( "reviews",{
 
 ##### 2.1.2.4.1 **tips** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image24.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image24.png?raw=true)
 
 ##### 2.1.2.4.2 **tips** Properties
 
@@ -1545,7 +1547,7 @@ db.createCollection( "reviews",{
 
 ##### 2.1.2.4.3 **tips** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0de02831-2b24-11e6-b7e5-591297143e36>\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02833-2b24-11e6-b7e5-591297143e36>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02834-2b24-11e6-b7e5-591297143e36>likes</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02835-2b24-11e6-b7e5-591297143e36>text</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02836-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0de02831-2b24-11e6-b7e5-591297143e36>_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02833-2b24-11e6-b7e5-591297143e36>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02834-2b24-11e6-b7e5-591297143e36>likes</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02835-2b24-11e6-b7e5-591297143e36>text</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02836-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="0de02831-2b24-11e6-b7e5-591297143e36"></a>2.1.2.4.3.1 Field **\_id**
 
@@ -1601,10 +1603,10 @@ db.createCollection( "tips",{
             "bsonType": "object",
             "title": "tips",
             "properties": {
-                "\_id": {
+                "_id": {
                     "bsonType": "objectId"
                 },
-                "business\_id": {
+                "business_id": {
                     "bsonType": "objectId"
                 },
                 "date": {
@@ -1619,15 +1621,15 @@ db.createCollection( "tips",{
                 "type": {
                     "bsonType": "string"
                 },
-                "user\_id": {
+                "user_id": {
                     "bsonType": "objectId"
                 }
             },
-            "required": \[
-                "\_id",
-                "business\_id",
-                "user\_id"
-            \]
+            "required": [
+                "_id",
+                "business_id",
+                "user_id"
+            ]
         }
     },
     "validationLevel": "off",
@@ -1640,7 +1642,7 @@ db.createCollection( "tips",{
 
 ##### 2.1.2.5.1 **users** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image25.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image25.png?raw=true)
 
 ##### 2.1.2.5.2 **users** Properties
 
@@ -1648,7 +1650,7 @@ db.createCollection( "tips",{
 
 ##### 2.1.2.5.3 **users** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f125-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f123-2b24-11e6-b7e5-591297143e36>name</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"><p>Fri Sep 15 2017 17:31:32 GMT+0200 (Romance Summer Time): MongoDB Demo</p></div></td></tr><tr><td><a href=#0df0f112-2b24-11e6-b7e5-591297143e36>average\_stars</a></td><td class="no-break-word">numeric</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f113-2b24-11e6-b7e5-591297143e36>compliments</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f114-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f115-2b24-11e6-b7e5-591297143e36>cute</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f116-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f117-2b24-11e6-b7e5-591297143e36>hot</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f118-2b24-11e6-b7e5-591297143e36>more</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f119-2b24-11e6-b7e5-591297143e36>note</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11a-2b24-11e6-b7e5-591297143e36>photos</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11b-2b24-11e6-b7e5-591297143e36>plain</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11c-2b24-11e6-b7e5-591297143e36>profile</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11d-2b24-11e6-b7e5-591297143e36>writer</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11e-2b24-11e6-b7e5-591297143e36>elite</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11f-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f120-2b24-11e6-b7e5-591297143e36>fans</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f121-2b24-11e6-b7e5-591297143e36>friends</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f122-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f124-2b24-11e6-b7e5-591297143e36>review\_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f127-2b24-11e6-b7e5-591297143e36>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f128-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f129-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12a-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12b-2b24-11e6-b7e5-591297143e36>yelping\_since</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user_id</a></td><td class="no-break-word">objectId</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f125-2b24-11e6-b7e5-591297143e36>type</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f123-2b24-11e6-b7e5-591297143e36>name</a></td><td class="no-break-word">string</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"><p>Fri Sep 15 2017 17:31:32 GMT+0200 (Romance Summer Time): MongoDB Demo</p></div></td></tr><tr><td><a href=#0df0f112-2b24-11e6-b7e5-591297143e36>average_stars</a></td><td class="no-break-word">numeric</td><td>true</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f113-2b24-11e6-b7e5-591297143e36>compliments</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f114-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f115-2b24-11e6-b7e5-591297143e36>cute</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f116-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f117-2b24-11e6-b7e5-591297143e36>hot</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f118-2b24-11e6-b7e5-591297143e36>more</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f119-2b24-11e6-b7e5-591297143e36>note</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11a-2b24-11e6-b7e5-591297143e36>photos</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11b-2b24-11e6-b7e5-591297143e36>plain</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11c-2b24-11e6-b7e5-591297143e36>profile</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11d-2b24-11e6-b7e5-591297143e36>writer</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11e-2b24-11e6-b7e5-591297143e36>elite</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f11f-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f120-2b24-11e6-b7e5-591297143e36>fans</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f121-2b24-11e6-b7e5-591297143e36>friends</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f122-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f124-2b24-11e6-b7e5-591297143e36>review_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f127-2b24-11e6-b7e5-591297143e36>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f128-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f129-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12a-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12b-2b24-11e6-b7e5-591297143e36>yelping_since</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="0df0f126-2b24-11e6-b7e5-591297143e36"></a>2.1.2.5.3.1 Field **user\_id**
 
@@ -1678,7 +1680,7 @@ db.createCollection( "tips",{
 
 ##### 2.1.2.5.3.5.1 **compliments** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image26.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image26.png?raw=true)
 
 ##### 2.1.2.5.3.5.2 **compliments** Hierarchy
 
@@ -1756,7 +1758,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.16.1 **elite** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image27.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image27.png?raw=true)
 
 ##### 2.1.2.5.3.16.2 **elite** Hierarchy
 
@@ -1764,7 +1766,7 @@ Parent field: **users**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f11f-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f11f-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.5.3.16.3 **elite** properties
 
@@ -1786,7 +1788,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.19.1 **friends** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image28.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image28.png?raw=true)
 
 ##### 2.1.2.5.3.19.2 **friends** Hierarchy
 
@@ -1794,7 +1796,7 @@ Parent field: **users**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f122-2b24-11e6-b7e5-591297143e36>\[0\]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#0df0f122-2b24-11e6-b7e5-591297143e36>[0]</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 2.1.2.5.3.19.3 **friends** properties
 
@@ -1816,7 +1818,7 @@ Child field(s):
 
 ##### 2.1.2.5.3.22.1 **votes** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image29.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image29.png?raw=true)
 
 ##### 2.1.2.5.3.22.2 **votes** Hierarchy
 
@@ -1879,24 +1881,24 @@ db.createCollection( "users",{
             "title": "users",
             "description": "Users description",
             "properties": {
-                "\_id": {
+                "_id": {
                     "bsonType": "objectId"
                 },
-                "user\_id": {
+                "user_id": {
                     "bsonType": "objectId"
                 },
                 "type": {
                     "bsonType": "string",
-                    "enum": \[
+                    "enum": [
                         "user",
                         "owner",
                         "tester"
-                    \]
+                    ]
                 },
                 "name": {
                     "bsonType": "string"
                 },
-                "average\_stars": {
+                "average_stars": {
                     "bsonType": "number",
                     "minimum": 1,
                     "maximum": 5,
@@ -1954,7 +1956,7 @@ db.createCollection( "users",{
                         "bsonType": "string"
                     }
                 },
-                "review\_count": {
+                "review_count": {
                     "bsonType": "number"
                 },
                 "votes": {
@@ -1971,16 +1973,16 @@ db.createCollection( "users",{
                         }
                     }
                 },
-                "yelping\_since": {
+                "yelping_since": {
                     "bsonType": "string"
                 }
             },
-            "required": \[
-                "user\_id",
+            "required": [
+                "user_id",
                 "type",
                 "name",
-                "average\_stars"
-            \]
+                "average_stars"
+            ]
         }
     },
     "validationLevel": "off",
@@ -1989,7 +1991,7 @@ db.createCollection( "users",{
 db.users.createIndex(
 {
     "name": 1,
-    "average\_stars": -1
+    "average_stars": -1
 },
 {
     "name": "name+stars"
@@ -2007,7 +2009,7 @@ db.users.createIndex(
 );
 
 
-/\*Add sharding script\*/
+/*Add sharding script*/
 sh.enableSharding("yelp");
 sh.shardCollection("yelp.users",
 {
@@ -2025,7 +2027,7 @@ true,
 
 ##### 3.1.1 **rov\_bussiness** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image30.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image30.png?raw=true)
 
 ##### 3.1.2 **rov\_bussiness** Properties
 
@@ -2033,7 +2035,7 @@ true,
 
 ##### 3.1.3 **rov\_bussiness** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#97c2fc30-5193-11e7-b9f2-49270a53df2c>business\_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#67601810-5194-11e7-b9f2-49270a53df2c>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a08b5e20-5193-11e7-b9f2-49270a53df2c>full\_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#704306e0-5194-11e7-b9f2-49270a53df2c>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#97c2fc30-5193-11e7-b9f2-49270a53df2c>business_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#67601810-5194-11e7-b9f2-49270a53df2c>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#a08b5e20-5193-11e7-b9f2-49270a53df2c>full_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#704306e0-5194-11e7-b9f2-49270a53df2c>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="97c2fc30-5193-11e7-b9f2-49270a53df2c"></a>3.1.3.1 Field **business\_id**
 
@@ -2063,7 +2065,7 @@ true,
 
 ##### 3.2.1 **rov\_rev\_users** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image31.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image31.png?raw=true)
 
 ##### 3.2.2 **rov\_rev\_users** Properties
 
@@ -2071,7 +2073,7 @@ true,
 
 ##### 3.2.3 **rov\_rev\_users** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#70972f00-5210-11e7-8e65-9b1d6a151b1d>review\_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#81b90470-5210-11e7-8e65-9b1d6a151b1d>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8eefbd00-5210-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9aadb840-5210-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78ca5f0-520d-11e7-8e65-9b1d6a151b1d>business</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e0580-520d-11e7-8e65-9b1d6a151b1d>\[0\]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c92-520d-11e7-8e65-9b1d6a151b1d>business\_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#b78e2c99-520d-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9f-520d-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9b-520d-11e7-8e65-9b1d6a151b1d>open</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9d-520d-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9c-520d-11e7-8e65-9b1d6a151b1d>review\_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c95-520d-11e7-8e65-9b1d6a151b1d>full\_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c94-520d-11e7-8e65-9b1d6a151b1d>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9e-520d-11e7-8e65-9b1d6a151b1d>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c97-520d-11e7-8e65-9b1d6a151b1d>latitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c98-520d-11e7-8e65-9b1d6a151b1d>longitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e43ac0-520a-11e7-8e65-9b1d6a151b1d>user</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe10-520a-11e7-8e65-9b1d6a151b1d>\[0\]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1a-520a-11e7-8e65-9b1d6a151b1d>user\_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe17-520a-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"><p>Fri Sep 15 2017 17:31:32 GMT+0200 (Romance Summer Time): MongoDB Demo</p></div></td></tr><tr><td><a href=#c1e4fe19-520a-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1b-520a-11e7-8e65-9b1d6a151b1d>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f128-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f129-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12a-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1c-520a-11e7-8e65-9b1d6a151b1d>yelping\_since</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#70972f00-5210-11e7-8e65-9b1d6a151b1d>review_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#81b90470-5210-11e7-8e65-9b1d6a151b1d>date</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#8eefbd00-5210-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#9aadb840-5210-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78ca5f0-520d-11e7-8e65-9b1d6a151b1d>business</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e0580-520d-11e7-8e65-9b1d6a151b1d>[0]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c92-520d-11e7-8e65-9b1d6a151b1d>business_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"><p>Unique key for businesses</p></div></td><td><div class="docs-markdown"><p>Sat Nov 04 2017 10:12:00 GMT+0100 (Romance Standard Time): some comments</p></div></td></tr><tr><td><a href=#b78e2c99-520d-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9f-520d-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9b-520d-11e7-8e65-9b1d6a151b1d>open</a></td><td class="no-break-word">boolean</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9d-520d-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9c-520d-11e7-8e65-9b1d6a151b1d>review_count</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c95-520d-11e7-8e65-9b1d6a151b1d>full_address</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7107ebf0-dc5b-11e9-b819-e3f2d5171928>houseNum</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#760da090-dc5b-11e9-b819-e3f2d5171928>street</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7bfbe070-dc5b-11e9-b819-e3f2d5171928>box</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#7ee803e0-dc5b-11e9-b819-e3f2d5171928>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#85787730-dc5b-11e9-b819-e3f2d5171928>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#87afc990-dc5b-11e9-b819-e3f2d5171928>zip</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c94-520d-11e7-8e65-9b1d6a151b1d>city</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9e-520d-11e7-8e65-9b1d6a151b1d>state</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c97-520d-11e7-8e65-9b1d6a151b1d>latitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c98-520d-11e7-8e65-9b1d6a151b1d>longitude</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e43ac0-520a-11e7-8e65-9b1d6a151b1d>user</a></td><td class="no-break-word">array</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe10-520a-11e7-8e65-9b1d6a151b1d>[0]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1a-520a-11e7-8e65-9b1d6a151b1d>user_id</a></td><td class="no-break-word">objectId</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe17-520a-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"><p>Fri Sep 15 2017 17:31:32 GMT+0200 (Romance Summer Time): MongoDB Demo</p></div></td></tr><tr><td><a href=#c1e4fe19-520a-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1b-520a-11e7-8e65-9b1d6a151b1d>votes</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f128-2b24-11e6-b7e5-591297143e36>cool</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f129-2b24-11e6-b7e5-591297143e36>funny</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#0df0f12a-2b24-11e6-b7e5-591297143e36>useful</a></td><td class="no-break-word">numeric</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1c-520a-11e7-8e65-9b1d6a151b1d>yelping_since</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ### <a id="70972f00-5210-11e7-8e65-9b1d6a151b1d"></a>3.2.3.1 Field **review\_id**
 
@@ -2101,7 +2103,7 @@ true,
 
 ##### 3.2.3.5.1 **business** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image32.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image32.png?raw=true)
 
 ##### 3.2.3.5.2 **business** Hierarchy
 
@@ -2109,7 +2111,7 @@ Parent field: **rov\_rev\_users**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#b78e0580-520d-11e7-8e65-9b1d6a151b1d>\[0\]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#b78e0580-520d-11e7-8e65-9b1d6a151b1d>[0]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 3.2.3.5.3 **business** properties
 
@@ -2119,7 +2121,7 @@ Child field(s):
 
 ##### 3.2.3.6.1 **\[0\]** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image33.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image33.png?raw=true)
 
 ##### 3.2.3.6.2 **\[0\]** Hierarchy
 
@@ -2127,7 +2129,7 @@ Parent field: **business**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#b78e2c92-520d-11e7-8e65-9b1d6a151b1d>business\_id</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c99-520d-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9f-520d-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9b-520d-11e7-8e65-9b1d6a151b1d>open</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9d-520d-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9c-520d-11e7-8e65-9b1d6a151b1d>review\_count</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c95-520d-11e7-8e65-9b1d6a151b1d>full\_address</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c94-520d-11e7-8e65-9b1d6a151b1d>city</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9e-520d-11e7-8e65-9b1d6a151b1d>state</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c97-520d-11e7-8e65-9b1d6a151b1d>latitude</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c98-520d-11e7-8e65-9b1d6a151b1d>longitude</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#b78e2c92-520d-11e7-8e65-9b1d6a151b1d>business_id</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c99-520d-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9f-520d-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9b-520d-11e7-8e65-9b1d6a151b1d>open</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9d-520d-11e7-8e65-9b1d6a151b1d>stars</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9c-520d-11e7-8e65-9b1d6a151b1d>review_count</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c95-520d-11e7-8e65-9b1d6a151b1d>full_address</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c94-520d-11e7-8e65-9b1d6a151b1d>city</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c9e-520d-11e7-8e65-9b1d6a151b1d>state</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c97-520d-11e7-8e65-9b1d6a151b1d>latitude</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#b78e2c98-520d-11e7-8e65-9b1d6a151b1d>longitude</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 3.2.3.6.3 **\[0\]** properties
 
@@ -2203,7 +2205,7 @@ Child field(s):
 
 ##### 3.2.3.18.1 **user** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image34.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image34.png?raw=true)
 
 ##### 3.2.3.18.2 **user** Hierarchy
 
@@ -2211,7 +2213,7 @@ Parent field: **rov\_rev\_users**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#c1e4fe10-520a-11e7-8e65-9b1d6a151b1d>\[0\]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#c1e4fe10-520a-11e7-8e65-9b1d6a151b1d>[0]</a></td><td class="no-break-word">document</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 3.2.3.18.3 **user** properties
 
@@ -2221,7 +2223,7 @@ Child field(s):
 
 ##### 3.2.3.19.1 **\[0\]** Tree Diagram
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image35.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image35.png?raw=true)
 
 ##### 3.2.3.19.2 **\[0\]** Hierarchy
 
@@ -2229,7 +2231,7 @@ Parent field: **user**
 
 Child field(s):
 
-<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#c1e4fe1a-520a-11e7-8e65-9b1d6a151b1d>user\_id</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe17-520a-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe19-520a-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1b-520a-11e7-8e65-9b1d6a151b1d>votes</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1c-520a-11e7-8e65-9b1d6a151b1d>yelping\_since</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="field-properties-table"><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=#c1e4fe1a-520a-11e7-8e65-9b1d6a151b1d>user_id</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe17-520a-11e7-8e65-9b1d6a151b1d>name</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe19-520a-11e7-8e65-9b1d6a151b1d>type</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1b-520a-11e7-8e65-9b1d6a151b1d>votes</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=#c1e4fe1c-520a-11e7-8e65-9b1d6a151b1d>yelping_since</a></td><td class="no-break-word">reference</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
 
 ##### 3.2.3.19.3 **\[0\]** properties
 
@@ -2273,70 +2275,70 @@ Child field(s):
 
 ##### 4.1.1 **fk businesses.business\_id to checkins.business\_id** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image36.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image37.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image36.png?raw=true)![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image37.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#a080d1d0-91f6-11e9-a924-ddc9cd9b071f>checkins(1)</a></td><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#a080d1d0-91f6-11e9-a924-ddc9cd9b071f>checkins(1)</a></td><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business_id</a></td></tr></tbody></table>
 
 ##### 4.1.2 **fk businesses.business\_id to checkins.business\_id** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk businesses.business_id to checkins.business_id</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#a080d1d0-91f6-11e9-a924-ddc9cd9b071f>checkins(1)</a></td></tr><tr><td>Child field</td><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business\_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk businesses.business_id to checkins.business_id</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#a080d1d0-91f6-11e9-a924-ddc9cd9b071f>checkins(1)</a></td></tr><tr><td>Child field</td><td><a href=#9c7dc021-91f6-11e9-a924-ddc9cd9b071f>business_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
 
 ### <a id="fb857d40-2b26-11e6-b7e5-591297143e36"></a>4.2 Relationship **fk\_reviewsBusinesses**
 
 ##### 4.2.1 **fk\_reviewsBusinesses** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image38.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image39.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image38.png?raw=true)![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image39.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr></tbody></table>
 
 ##### 4.2.2 **fk\_reviewsBusinesses** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_reviewsBusinesses</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td></tr><tr><td>Child field</td><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_reviewsBusinesses</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td></tr><tr><td>Child field</td><td><a href=#0da2aa02-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
 
 ### <a id="e2514f70-2b26-11e6-b7e5-591297143e36"></a>4.3 Relationship **fk\_reviewsUsers**
 
 ##### 4.3.1 **fk\_reviewsUsers** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image40.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image41.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image40.png?raw=true)![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image41.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr></tbody></table>
 
 ##### 4.3.2 **fk\_reviewsUsers** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_reviewsUsers</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td></tr><tr><td>Parent field</td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td></tr><tr><td>Child field</td><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_reviewsUsers</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td></tr><tr><td>Parent field</td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0da2aa00-2b24-11e6-b7e5-591297143e36>reviews</a></td></tr><tr><td>Child field</td><td><a href=#0da2aa08-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
 
 ### <a id="8a3660f0-2b26-11e6-b7e5-591297143e36"></a>4.4 Relationship **fk\_tipsBusinesses**
 
 ##### 4.4.1 **fk\_tipsBusinesses** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image42.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image43.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image42.png?raw=true)![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image43.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr></tbody></table>
 
 ##### 4.4.2 **fk\_tipsBusinesses** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_tipsBusinesses</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td></tr><tr><td>Child field</td><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business\_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_tipsBusinesses</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0dd7ead0-2b24-11e6-b7e5-591297143e36>businesses</a></td></tr><tr><td>Parent field</td><td><a href=#0dd811fc-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td></tr><tr><td>Child field</td><td><a href=#0de02832-2b24-11e6-b7e5-591297143e36>business_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
 
 ### <a id="aa956d50-2b26-11e6-b7e5-591297143e36"></a>4.5 Relationship **fk\_tipsUsers**
 
 ##### 4.5.1 **fk\_tipsUsers** Diagram
 
-<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Parent Table</td><td>Parent field</td></tr></thead><tbody><tr><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr></tbody></table>
 
-![Hackolade image](/YelpChallengedatasetdocumentation_images2/image44.png?raw=true)![Hackolade image](/YelpChallengedatasetdocumentation_images2/image45.png?raw=true)
+![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image44.png?raw=true)![Hackolade image](/Yelp%20Challenge%20dataset%20documentation/image45.png?raw=true)
 
-<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr></tbody></table>
+<table><thead><tr><td>Child Table</td><td>Child field</td></tr></thead><tbody><tr><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr></tbody></table>
 
 ##### 4.5.2 **fk\_tipsUsers** Properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_tipsUsers</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td></tr><tr><td>Parent field</td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td></tr><tr><td>Child field</td><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user\_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>fk_tipsUsers</td></tr><tr><td>Description</td><td></td></tr><tr><td>Parent Collection</td><td><a href=#0df0f110-2b24-11e6-b7e5-591297143e36>users</a></td></tr><tr><td>Parent field</td><td><a href=#0df0f126-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr><tr><td>Parent Cardinality</td><td>1</td></tr><tr><td>Child Collection</td><td><a href=#0de02830-2b24-11e6-b7e5-591297143e36>tips</a></td></tr><tr><td>Child field</td><td><a href=#0de02837-2b24-11e6-b7e5-591297143e36>user_id</a></td></tr><tr><td>Child Cardinality</td><td>0..n</td></tr><tr><td>Comments</td><td></td></tr></tbody></table>
 
 ### <a id="edges"></a>
