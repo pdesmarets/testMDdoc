@@ -19,7 +19,7 @@ File name: Yelp Challenge dataset.json
 
 File path: C:\\Users\\Pascal\\Documents\\Hackolade\\Models\\MongoDB\\Yelp Challenge dataset.json
 
-Printed On: Fri Oct 16 2020 05:59:30 GMT+0200 (Central European Summer Time)
+Printed On: Fri Oct 16 2020 06:05:06 GMT+0200 (Central European Summer Time)
 
 Created with: [Hackolade](https://hackolade.com/) - Visual data modeling for NoSQL and multimodel databases
 
@@ -897,7 +897,459 @@ Child field(s):
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>type</td></tr><tr><td>Technical name</td><td>type</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Required</td><td>false</td></tr><tr><td>Primary key</td><td>false</td></tr></tbody></table>
 
-##### 2.1.2.1.4 **businesses** Target Script
+##### 2.1.2.1.4 **businesses** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "businesses",
+    "properties": {
+        "business_id": {
+            "type": "string",
+            "description": "Unique key for businesses",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "full_address": {
+            "$ref": "#model/definitions/full_address"
+        },
+        "city": {
+            "type": "string"
+        },
+        "state": {
+            "type": "string"
+        },
+        "attributes": {
+            "type": "object",
+            "properties": {
+                "acceptsCreditCards": {
+                    "type": "boolean"
+                },
+                "acceptsInsurance": {
+                    "type": "boolean"
+                },
+                "alcohol": {
+                    "type": "string"
+                },
+                "ambience": {
+                    "type": "object",
+                    "properties": {
+                        "casual": {
+                            "type": "boolean"
+                        },
+                        "classy": {
+                            "type": "boolean"
+                        },
+                        "divey": {
+                            "type": "boolean"
+                        },
+                        "hipster": {
+                            "type": "boolean"
+                        },
+                        "intimate": {
+                            "type": "boolean"
+                        },
+                        "romantic": {
+                            "type": "boolean"
+                        },
+                        "touristy": {
+                            "type": "boolean"
+                        },
+                        "trendy": {
+                            "type": "boolean"
+                        },
+                        "upscale": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "attire": {
+                    "type": "string"
+                },
+                "byAppointmentOnly": {
+                    "type": "boolean"
+                },
+                "byob/corkage": {
+                    "type": "string"
+                },
+                "caters": {
+                    "type": "boolean"
+                },
+                "coatCheck": {
+                    "type": "boolean"
+                },
+                "delivery": {
+                    "type": "boolean"
+                },
+                "dogsAllowed": {
+                    "type": "boolean"
+                },
+                "drive-thru": {
+                    "type": "boolean"
+                },
+                "goodFor": {
+                    "type": "object",
+                    "properties": {
+                        "breakfast": {
+                            "type": "boolean"
+                        },
+                        "brunch": {
+                            "type": "boolean"
+                        },
+                        "dessert": {
+                            "type": "boolean"
+                        },
+                        "dinner": {
+                            "type": "boolean"
+                        },
+                        "latenight": {
+                            "type": "boolean"
+                        },
+                        "lunch": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "goodForDancing": {
+                    "type": "boolean"
+                },
+                "goodForGroups": {
+                    "type": "boolean"
+                },
+                "goodForKids": {
+                    "type": "boolean"
+                },
+                "happyHour": {
+                    "type": "boolean"
+                },
+                "hasTv": {
+                    "type": "boolean"
+                },
+                "music": {
+                    "type": "object",
+                    "properties": {
+                        "background_music": {
+                            "type": "boolean"
+                        },
+                        "dj": {
+                            "type": "boolean"
+                        },
+                        "jukebox": {
+                            "type": "boolean"
+                        },
+                        "karaoke": {
+                            "type": "boolean"
+                        },
+                        "live": {
+                            "type": "boolean"
+                        },
+                        "video": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "noiseLevel": {
+                    "type": "string"
+                },
+                "open24Hours": {
+                    "type": "boolean"
+                },
+                "orderAtCounter": {
+                    "type": "boolean"
+                },
+                "outdoorSeating": {
+                    "type": "boolean"
+                },
+                "parking": {
+                    "type": "object",
+                    "properties": {
+                        "garage": {
+                            "type": "boolean"
+                        },
+                        "lot": {
+                            "type": "boolean"
+                        },
+                        "street": {
+                            "type": "boolean"
+                        },
+                        "valet": {
+                            "type": "boolean"
+                        },
+                        "validated": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "priceRange": {
+                    "type": "number"
+                },
+                "smoking": {
+                    "type": "string"
+                },
+                "take-out": {
+                    "type": "boolean"
+                },
+                "takesReservations": {
+                    "type": "boolean"
+                },
+                "waiterService": {
+                    "type": "boolean"
+                },
+                "wheelchairAccessible": {
+                    "type": "boolean"
+                },
+                "wi-fi": {
+                    "type": "string"
+                }
+            }
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "hours": {
+            "type": "object",
+            "properties": {
+                "friday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "monday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "saturday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "sunday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "thursday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "tuesday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "wednesday": {
+                    "type": "object",
+                    "properties": {
+                        "close": {
+                            "type": "string"
+                        },
+                        "open": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "latitude": {
+            "type": "number"
+        },
+        "longitude": {
+            "type": "number"
+        },
+        "neighborhoods": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "open": {
+            "type": "boolean"
+        },
+        "review_count": {
+            "type": "number"
+        },
+        "stars": {
+            "type": "number"
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "business_id"
+    ]
+}
+```
+
+##### 2.1.2.1.5 **businesses** JSON data
+
+```
+{
+    "business_id": ObjectId("507f1f77bcf86cd799439011"),
+    "name": "Lorem",
+    "full_address": {
+        "houseNum": "123",
+        "street": "Main Street",
+        "box": "Lorem",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    },
+    "city": "Lorem",
+    "state": "Lorem",
+    "attributes": {
+        "acceptsCreditCards": true,
+        "acceptsInsurance": true,
+        "alcohol": "Lorem",
+        "ambience": {
+            "casual": true,
+            "classy": true,
+            "divey": true,
+            "hipster": true,
+            "intimate": true,
+            "romantic": true,
+            "touristy": true,
+            "trendy": true,
+            "upscale": true
+        },
+        "attire": "Lorem",
+        "byAppointmentOnly": true,
+        "byob/corkage": "Lorem",
+        "caters": true,
+        "coatCheck": true,
+        "delivery": true,
+        "dogsAllowed": true,
+        "drive-thru": true,
+        "goodFor": {
+            "breakfast": true,
+            "brunch": true,
+            "dessert": true,
+            "dinner": true,
+            "latenight": true,
+            "lunch": true
+        },
+        "goodForDancing": true,
+        "goodForGroups": true,
+        "goodForKids": true,
+        "happyHour": true,
+        "hasTv": true,
+        "music": {
+            "background_music": true,
+            "dj": true,
+            "jukebox": true,
+            "karaoke": true,
+            "live": true,
+            "video": true
+        },
+        "noiseLevel": "Lorem",
+        "open24Hours": true,
+        "orderAtCounter": true,
+        "outdoorSeating": true,
+        "parking": {
+            "garage": true,
+            "lot": true,
+            "street": true,
+            "valet": true,
+            "validated": true
+        },
+        "priceRange": -59,
+        "smoking": "Lorem",
+        "take-out": true,
+        "takesReservations": true,
+        "waiterService": true,
+        "wheelchairAccessible": true,
+        "wi-fi": "Lorem"
+    },
+    "categories": [
+        "Lorem"
+    ],
+    "hours": {
+        "friday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "monday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "saturday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "sunday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "thursday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "tuesday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        },
+        "wednesday": {
+            "close": "Lorem",
+            "open": "Lorem"
+        }
+    },
+    "latitude": -54,
+    "longitude": 34,
+    "neighborhoods": [
+        "Lorem"
+    ],
+    "open": true,
+    "review_count": -6,
+    "stars": 6,
+    "type": "Lorem"
+}
+```
+
+##### 2.1.2.1.6 **businesses** Target Script
 
 ```
 use yelp;
@@ -1323,7 +1775,61 @@ Child field(s):
 
 <table class="index-table"><thead><tr><td class="table-property-column">Property</td><td class="table-column-property">_id_</td></tr></thead><tbody><tr><td>Name</td><td class="table-column-indexes">_id_</td></tr><tr><td>Key</td><td class="table-column-indexes">_id('ascending')</td></tr><tr><td>Hashed</td><td class="table-column-indexes"></td></tr><tr><td>Unique</td><td class="table-column-indexes"></td></tr><tr><td>Drop duplicates</td><td class="table-column-indexes"></td></tr><tr><td>Sparse</td><td class="table-column-indexes"></td></tr><tr><td>Background indexing</td><td class="table-column-indexes"></td></tr><tr><td>Partial filter exp</td><td class="table-column-indexes"></td></tr><tr><td>Expire after (seconds)</td><td class="table-column-indexes"></td></tr><tr><td>Storage engine</td><td class="table-column-indexes"></td></tr><tr><td>Comments</td><td class="table-column-indexes"></td></tr><tr><td>Custom index property</td><td class="table-column-indexes"></td></tr></tbody></table>
 
-##### 2.1.2.2.5 **checkins** Target Script
+##### 2.1.2.2.5 **checkins** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "checkins",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "checkin_info": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+                "^[a-zA-Z0-9_.-]{3}$": {
+                    "type": "number"
+                },
+                "^[a-zA-Z0-9_.-]{4}$": {
+                    "type": "number"
+                }
+            }
+        },
+        "type": {
+            "type": "string"
+        },
+        "business_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "checkin_info",
+        "type",
+        "business_id"
+    ]
+}
+```
+
+##### 2.1.2.2.6 **checkins** JSON data
+
+```
+{
+    "_id": ObjectId("507f1f77bcf86cd799439011"),
+    "checkin_info": {
+        "9-6": -29,
+        "23-6": -41
+    },
+    "type": "checkin",
+    "business_id": "eFA9dqXT5EA_TrMgbo03QQ"
+}
+```
+
+##### 2.1.2.2.7 **checkins** Target Script
 
 ```
 use yelp;
@@ -1471,7 +1977,81 @@ Child field(s):
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>useful</td></tr><tr><td>Technical name</td><td>useful</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Type</td><td>numeric</td></tr><tr><td>Required</td><td>false</td></tr><tr><td>Primary key</td><td>false</td></tr></tbody></table>
 
-##### 2.1.2.3.4 **reviews** Target Script
+##### 2.1.2.3.4 **reviews** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "reviews",
+    "properties": {
+        "review_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "business_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "date": {
+            "type": "string"
+        },
+        "stars": {
+            "type": "number"
+        },
+        "text": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "user_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "votes": {
+            "type": "object",
+            "properties": {
+                "cool": {
+                    "type": "number"
+                },
+                "funny": {
+                    "type": "number"
+                },
+                "useful": {
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "required": [
+        "review_id",
+        "business_id",
+        "user_id"
+    ]
+}
+```
+
+##### 2.1.2.3.5 **reviews** JSON data
+
+```
+{
+    "review_id": ObjectId("507f1f77bcf86cd799439011"),
+    "business_id": ObjectId("507f1f77bcf86cd799439011"),
+    "date": "Lorem",
+    "stars": 5,
+    "text": "Lorem",
+    "type": "Lorem",
+    "user_id": ObjectId("507f1f77bcf86cd799439011"),
+    "votes": {
+        "cool": 68,
+        "funny": -30,
+        "useful": -94
+    }
+}
+```
+
+##### 2.1.2.3.6 **reviews** Target Script
 
 ```
 use yelp;
@@ -1591,7 +2171,62 @@ db.createCollection( "reviews",{
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>user_id</td></tr><tr><td>Technical name</td><td>user_id</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Type</td><td>objectId</td></tr><tr><td>Required</td><td>true</td></tr><tr><td>Primary key</td><td>false</td></tr><tr><td>Relationship type</td><td>Foreign Key</td></tr></tbody></table>
 
-##### 2.1.2.4.4 **tips** Target Script
+##### 2.1.2.4.4 **tips** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "tips",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "business_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "date": {
+            "type": "string"
+        },
+        "likes": {
+            "type": "number"
+        },
+        "text": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "user_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        }
+    },
+    "required": [
+        "_id",
+        "business_id",
+        "user_id"
+    ]
+}
+```
+
+##### 2.1.2.4.5 **tips** JSON data
+
+```
+{
+    "_id": ObjectId("507f1f77bcf86cd799439011"),
+    "business_id": ObjectId("507f1f77bcf86cd799439011"),
+    "date": "Lorem",
+    "likes": -6,
+    "text": "Lorem",
+    "type": "Lorem",
+    "user_id": ObjectId("507f1f77bcf86cd799439011")
+}
+```
+
+##### 2.1.2.4.6 **tips** Target Script
 
 ```
 use yelp;
@@ -1868,7 +2503,156 @@ Child field(s):
 
 <table><thead><tr><td>Property</td><td>Sharding</td></tr></thead><tbody><tr><td>Key</td><td>name+stars</td></tr><tr><td>Hashed</td><td></td></tr><tr><td>Unique</td><td>true</td></tr><tr><td>Number of initial chunks</td><td></td></tr><tr><td>Collation</td><td>null</td></tr><tr><td>Zone (Tag)</td><td></td></tr><tr><td>Comments</td><td></td></tr><tr><td>Custom sharding property</td><td></td></tr></tbody></table>
 
-##### 2.1.2.5.7 **users** Target Script
+##### 2.1.2.5.7 **users** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "users",
+    "description": "Users description",
+    "properties": {
+        "user_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "user",
+                "owner",
+                "tester"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "average_stars": {
+            "type": "number",
+            "minimum": 1,
+            "maximum": 5,
+            "exclusiveMaximum": true
+        },
+        "compliments": {
+            "type": "object",
+            "properties": {
+                "cool": {
+                    "type": "number"
+                },
+                "cute": {
+                    "type": "number"
+                },
+                "funny": {
+                    "type": "number"
+                },
+                "hot": {
+                    "type": "number"
+                },
+                "more": {
+                    "type": "number"
+                },
+                "note": {
+                    "type": "number"
+                },
+                "photos": {
+                    "type": "number"
+                },
+                "plain": {
+                    "type": "number"
+                },
+                "profile": {
+                    "type": "number"
+                },
+                "writer": {
+                    "type": "number"
+                }
+            }
+        },
+        "elite": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "number"
+            }
+        },
+        "fans": {
+            "type": "number"
+        },
+        "friends": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "string"
+            }
+        },
+        "review_count": {
+            "type": "number"
+        },
+        "votes": {
+            "type": "object",
+            "properties": {
+                "cool": {
+                    "type": "number"
+                },
+                "funny": {
+                    "type": "number"
+                },
+                "useful": {
+                    "type": "number"
+                }
+            }
+        },
+        "yelping_since": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "user_id",
+        "type",
+        "name",
+        "average_stars"
+    ]
+}
+```
+
+##### 2.1.2.5.8 **users** JSON data
+
+```
+{
+    "user_id": ObjectId("507f1f77bcf86cd799439011"),
+    "type": "tester",
+    "name": "jkHFSDKNFDS?FN",
+    "average_stars": 3,
+    "compliments": {
+        "cool": 96,
+        "cute": -81,
+        "funny": -80,
+        "hot": -57,
+        "more": 35,
+        "note": 58,
+        "photos": 74,
+        "plain": 89,
+        "profile": -88,
+        "writer": -11
+    },
+    "elite": [
+        27
+    ],
+    "fans": 58,
+    "friends": [
+        "Lorem"
+    ],
+    "review_count": -4,
+    "votes": {
+        "cool": -65,
+        "funny": 70,
+        "useful": -99
+    },
+    "yelping_since": "Lorem"
+}
+```
+
+##### 2.1.2.5.9 **users** Target Script
 
 ```
 use yelp;
@@ -2060,6 +2844,74 @@ true,
 ##### 3.1.3.4.1 **type** properties
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>type</td></tr><tr><td>Technical name</td><td>type</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Reference type</td><td>collectionReference</td></tr></tbody></table>
+
+##### 3.1.4 **rov\_bussiness** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "rov_bussiness",
+    "properties": {
+        "business_id": {
+            "type": "string",
+            "description": "Unique key for businesses",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "name": {
+            "type": "string"
+        },
+        "full_address": {
+            "type": "object",
+            "properties": {
+                "houseNum": {
+                    "type": "string"
+                },
+                "street": {
+                    "type": "string"
+                },
+                "box": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "business_id"
+    ]
+}
+```
+
+##### 3.1.5 **rov\_bussiness** JSON data
+
+```
+{
+    "business_id": ObjectId("507f1f77bcf86cd799439011"),
+    "name": "Lorem",
+    "full_address": {
+        "houseNum": "123",
+        "street": "Main Street",
+        "box": "Lorem",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+    },
+    "type": "Lorem"
+}
+```
 
 ### <a id="090874c0-5206-11e7-8e65-9b1d6a151b1d"></a>3.2 View **rov\_rev\_users**
 
@@ -2266,6 +3118,198 @@ Child field(s):
 ##### 3.2.3.24.1 **yelping\_since** properties
 
 <table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>yelping_since</td></tr><tr><td>Technical name</td><td>yelping_since</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Reference type</td><td>collectionReference</td></tr></tbody></table>
+
+##### 3.2.4 **rov\_rev\_users** JSON Schema
+
+```
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "rov_rev_users",
+    "properties": {
+        "review_id": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{24}$"
+        },
+        "date": {
+            "type": "string"
+        },
+        "stars": {
+            "type": "number"
+        },
+        "type": {
+            "type": "string"
+        },
+        "business": {
+            "type": "array",
+            "additionalItems": true,
+            "uniqueItems": false,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "business_id": {
+                        "type": "string",
+                        "description": "Unique key for businesses",
+                        "pattern": "^[a-fA-F0-9]{24}$"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "open": {
+                        "type": "boolean"
+                    },
+                    "stars": {
+                        "type": "number"
+                    },
+                    "review_count": {
+                        "type": "number"
+                    },
+                    "full_address": {
+                        "type": "object",
+                        "properties": {
+                            "houseNum": {
+                                "type": "string"
+                            },
+                            "street": {
+                                "type": "string"
+                            },
+                            "box": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "zip": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "number"
+                    },
+                    "longitude": {
+                        "type": "number"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "business_id"
+                ]
+            }
+        },
+        "user": {
+            "type": "array",
+            "additionalItems": true,
+            "uniqueItems": false,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "user_id": {
+                        "type": "string",
+                        "pattern": "^[a-fA-F0-9]{24}$"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "user",
+                            "owner",
+                            "tester"
+                        ]
+                    },
+                    "votes": {
+                        "type": "object",
+                        "properties": {
+                            "cool": {
+                                "type": "number"
+                            },
+                            "funny": {
+                                "type": "number"
+                            },
+                            "useful": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "yelping_since": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "user_id",
+                    "name",
+                    "type"
+                ]
+            }
+        }
+    },
+    "required": [
+        "review_id"
+    ]
+}
+```
+
+##### 3.2.5 **rov\_rev\_users** JSON data
+
+```
+{
+    "review_id": ObjectId("507f1f77bcf86cd799439011"),
+    "date": "Lorem",
+    "stars": 45,
+    "type": "Lorem",
+    "business": [
+        {
+            "business_id": ObjectId("507f1f77bcf86cd799439011"),
+            "name": "Lorem",
+            "type": "Lorem",
+            "open": true,
+            "stars": -93,
+            "review_count": -16,
+            "full_address": {
+                "houseNum": "123",
+                "street": "Main Street",
+                "box": "Lorem",
+                "city": "Anytown",
+                "state": "CA",
+                "zip": "12345"
+            },
+            "city": "Lorem",
+            "state": "Lorem",
+            "latitude": -27,
+            "longitude": 67
+        }
+    ],
+    "user": [
+        {
+            "user_id": ObjectId("507f1f77bcf86cd799439011"),
+            "name": "jkHFSDKNFDS?FN",
+            "type": "tester",
+            "votes": {
+                "cool": -65,
+                "funny": 70,
+                "useful": -99
+            },
+            "yelping_since": "Lorem"
+        }
+    ]
+}
+```
 
 ### <a id="relationships"></a>
 
